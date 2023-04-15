@@ -1,0 +1,37 @@
+{
+  "name": "react-icons-lib-builder",
+  "version": "1.0.0",
+  "description": "A simple project to build a reactjs icon library from a set of svg icons",
+  "main": "./cjs/icon/index.js",
+  "module": "./esm/icon/index.js",
+  "types": "./esm/icon/index.d.ts",
+  "scripts": {
+    "generateIcons": "npx ts-node --esm scripts/index.ts",
+    "icon": "mkdir -p src/icon src/utils && npm run generateIcons",
+    "build:esm": "tsc --project tsconfig.build.json --module esnext --outdir esm",
+    "build:cjs": "tsc --project tsconfig.build.json --module commonjs --outDir cjs",
+    "build": "npm run icon && npm run build:esm && npm run build:cjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "@babel/preset-react": "^7.18.6",
+    "@types/lodash": "^4.14.194",
+    "@types/node": "^18.15.11",
+    "@types/react": "^18.0.35",
+    "@typescript-eslint/eslint-plugin": "^5.58.0",
+    "eslint": "^8.38.0",
+    "eslint-config-standard-with-typescript": "^34.0.1",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "lodash": "^4.17.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}

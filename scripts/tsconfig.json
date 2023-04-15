@@ -1,0 +1,12 @@
+{
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  },
+  "compilerOptions": {
+    "module": "commonJS",
+    "resolveJsonModule": true,
+    "esModuleInterop": true
+  }
+}
