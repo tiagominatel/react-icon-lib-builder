@@ -20,3 +20,4 @@ The Icons will avaliable individualy with PascalCase versions of the svg files n
 * Create an <Icon /> component with an icon prop so the icons may be programmatically used eg.: `<Icon icon="MyIcon" />` or `<Icon icon="Star" />`
 * Create the Prop variant on the icon components so icon variations as 'outline', 'edge', 'filled' can be used
 * Automate the creation of icons variants like 'outline', 'edge', 'filled', etc. from folder strutcture of the svg folder eg.: svg/default/my-icon.svg svg/outlined/my-icon.svg will create only one <MyIcon /> component with the prop variant 'default' | 'outlined'
+* Automate documentation creation
